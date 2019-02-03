@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Write</title>
+    <style>
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <script type="text/javascript" src="js/p5.min.js"></script>
+    <script src="js/p5.play.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/sketch.js"></script>
+    <!--change the deck here-->
+    <div id="lessonselector">
+
+
+        <script>
+            var deck = "<script type=\"text/javascript\" src=\"decks/" + localStorage.deckload + "\"></script";
+            console.log(deck);
+            document.write(deck);
+
+        </script>
+
+    </div>
+
+    <!--deck changing code ends here-->
+
+    <br>
+
+    <div class="row">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-image">
+                    <!--<span class="card-title">Card Title</span>-->
+                </div>
+                <div class="card-action">
+                    <a href="index.html">Back</a>
+
+
+                    <a class="btn-floating halfway-fab waves-effect waves-light green" id="check" onclick="chincheck();"><i class="material-icons">check</i></a>
+
+                    <a class="btn-floating halfway-fab waves-effect waves-light blue" onclick="next();" style="display: none;" id="next"><i class="material-icons">
+arrow_forward
+</i></a>
+
+                </div>
+                <div class="card-content" style="padding-top: 12px;padding-bottom: 12px;">
+
+                    <div class="row">
+                        <div style="col s6">
+                            <div>
+                                <p id="engword">Press the green button to start.</p>
+                            </div>
+                            <div>
+                                <h4 id="chineseword" style="display: none;"></h4>
+                            </div>
+                        </div>
+
+                        <div style="col s6">
+                            <div id="img" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large waves-effect waves-light red" onclick="clrscr();"><i class="material-icons">delete</i></a>
+    </div>
+
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+</body>
+
+</html>

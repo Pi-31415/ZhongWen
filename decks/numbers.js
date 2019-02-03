@@ -1,0 +1,1 @@
+var mand = ["一 "," one","二 "," two","三 "," three","四 "," four","五 "," five","六 "," six","七 "," seven","八 "," eight","九 "," nine","十 "," ten","十一 "," eleven","二十 "," twenty","百 "," hundred","千 "," thousand","万 "," ten thousand","是 "," am, is, are","个 "," measure word","零 "," zero","一百零一 "," 101"];
